@@ -1,0 +1,19 @@
+16 10 * * 1-5 /home/ubuntu/2_trading_systems/venv_python3.8/bin/python3 /home/ubuntu/2_trading_systems/Strategies/30mins_BNF_strategy.py >> /home/ubuntu/2_trading_systems/Strategies/30mins_BNF_cronlogs.txt.txt 2>&1
+
+46 10 * * 1-5 /home/ubuntu/2_trading_systems/venv_python3.8/bin/python3 /home/ubuntu/2_trading_systems/Strategies/30mins_BNF_strategy.py >> /home/ubuntu/2_trading_systems/Strategies/30mins_BNF_cronlogs.txt.txt 2>&1
+
+16 11 * * 1-5 /home/ubuntu/2_trading_systems/venv_python3.8/bin/python3 /home/ubuntu/2_trading_systems/Strategies/30mins_BNF_strategy.py >> /home/ubuntu/2_trading_systems/Strategies/30mins_BNF_cronlogs.txt.txt 2>&1
+
+46 11 * * 1-5 /home/ubuntu/2_trading_systems/venv_python3.8/bin/python3 /home/ubuntu/2_trading_systems/Strategies/30mins_BNF_strategy.py >> /home/ubuntu/2_trading_systems/Strategies/30mins_BNF_cronlogs.txt.txt 2>&1
+
+16 12 * * 1-5 /home/ubuntu/2_trading_systems/venv_python3.8/bin/python3 /home/ubuntu/2_trading_systems/Strategies/30mins_BNF_strategy.py >> /home/ubuntu/2_trading_systems/Strategies/30mins_BNF_cronlogs.txt.txt 2>&1
+
+46 12 * * 1-5 /home/ubuntu/2_trading_systems/venv_python3.8/bin/python3 /home/ubuntu/2_trading_systems/Strategies/30mins_BNF_strategy.py >> /home/ubuntu/2_trading_systems/Strategies/30mins_BNF_cronlogs.txt.txt 2>&1
+
+16 13 * * 1-5 /home/ubuntu/2_trading_systems/venv_python3.8/bin/python3 /home/ubuntu/2_trading_systems/Strategies/30mins_BNF_strategy.py >> /home/ubuntu/2_trading_systems/Strategies/30mins_BNF_cronlogs.txt.txt 2>&1
+
+46 13 * * 1-5 /home/ubuntu/2_trading_systems/venv_python3.8/bin/python3 /home/ubuntu/2_trading_systems/Strategies/30mins_BNF_strategy.py >> /home/ubuntu/2_trading_systems/Strategies/30mins_BNF_cronlogs.txt.txt 2>&1
+
+16 14 * * 1-5 /home/ubuntu/2_trading_systems/venv_python3.8/bin/python3 /home/ubuntu/2_trading_systems/Strategies/30mins_BNF_strategy.py >> /home/ubuntu/2_trading_systems/Strategies/30mins_BNF_cronlogs.txt.txt 2>&1
+
+46 14 * * 1-5 /home/ubuntu/2_trading_systems/venv_python3.8/bin/python3 /home/ubuntu/2_trading_systems/Strategies/30mins_BNF_strategy.py >> /home/ubuntu/2_trading_systems/Strategies/30mins_BNF_cronlogs.txt.txt 2>&1

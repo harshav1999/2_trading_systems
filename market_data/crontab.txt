@@ -1,0 +1,19 @@
+16 10 * * 1-5 /Users/harshavardhan/Desktop/2_trading_systems/venv_python3.8/bin/python3 /Users/harshavardhan/Desktop/2_trading_systems/market_data/30mins_BNF_strategy.py >> /Users/harshavardhan/Desktop/2_trading_systems/market_data/cron_logs.txt 2>&1
+
+46 10 * * 1-5 /Users/harshavardhan/Desktop/2_trading_systems/venv_python3.8/bin/python3 /Users/harshavardhan/Desktop/2_trading_systems/market_data/30mins_BNF_strategy.py >> /Users/harshavardhan/Desktop/2_trading_systems/market_data/cron_logs.txt 2>&1
+
+16 11 * * 1-5 /Users/harshavardhan/Desktop/2_trading_systems/venv_python3.8/bin/python3 /Users/harshavardhan/Desktop/2_trading_systems/market_data/30mins_BNF_strategy.py >> /Users/harshavardhan/Desktop/2_trading_systems/market_data/cron_logs.txt 2>&1
+
+46 11 * * 1-5 /Users/harshavardhan/Desktop/2_trading_systems/venv_python3.8/bin/python3 /Users/harshavardhan/Desktop/2_trading_systems/market_data/30mins_BNF_strategy.py >> /Users/harshavardhan/Desktop/2_trading_systems/market_data/cron_logs.txt 2>&1
+
+16 12 * * 1-5 /Users/harshavardhan/Desktop/2_trading_systems/venv_python3.8/bin/python3 /Users/harshavardhan/Desktop/2_trading_systems/market_data/30mins_BNF_strategy.py >> /Users/harshavardhan/Desktop/2_trading_systems/market_data/cron_logs.txt 2>&1
+
+46 12 * * 1-5 /Users/harshavardhan/Desktop/2_trading_systems/venv_python3.8/bin/python3 /Users/harshavardhan/Desktop/2_trading_systems/market_data/30mins_BNF_strategy.py >> /Users/harshavardhan/Desktop/2_trading_systems/market_data/cron_logs.txt 2>&1
+
+16 13 * * 1-5 /Users/harshavardhan/Desktop/2_trading_systems/venv_python3.8/bin/python3 /Users/harshavardhan/Desktop/2_trading_systems/market_data/30mins_BNF_strategy.py >> /Users/harshavardhan/Desktop/2_trading_systems/market_data/cron_logs.txt 2>&1
+
+46 13 * * 1-5 /Users/harshavardhan/Desktop/2_trading_systems/venv_python3.8/bin/python3 /Users/harshavardhan/Desktop/2_trading_systems/market_data/30mins_BNF_strategy.py >> /Users/harshavardhan/Desktop/2_trading_systems/market_data/cron_logs.txt 2>&1
+
+16 14 * * 1-5 /Users/harshavardhan/Desktop/2_trading_systems/venv_python3.8/bin/python3 /Users/harshavardhan/Desktop/2_trading_systems/market_data/30mins_BNF_strategy.py >> /Users/harshavardhan/Desktop/2_trading_systems/market_data/cron_logs.txt 2>&1
+
+46 14 * * 1-5 /Users/harshavardhan/Desktop/2_trading_systems/venv_python3.8/bin/python3 /Users/harshavardhan/Desktop/2_trading_systems/market_data/30mins_BNF_strategy.py >> /Users/harshavardhan/Desktop/2_trading_systems/market_data/cron_logs.txt 2>&1

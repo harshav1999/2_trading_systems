@@ -1,0 +1,57 @@
+Traceback (most recent call last):
+  File "/Users/harshavardhan/Desktop/2_trading_systems/market_data/30mins_BNF_strategy.py", line 123, in <module>
+    executeTrade(angle_smart_obj,entry, sl, side) 
+  File "/Users/harshavardhan/Desktop/2_trading_systems/market_data/30mins_BNF_strategy.py", line 115, in executeTrade
+    orderId = angle_smart_obj.placeOrder(orderparams)
+  File "/Users/harshavardhan/Desktop/2_trading_systems/venv_python3.8/lib/python3.10/site-packages/smartapi/smartConnect.py", line 290, in placeOrder
+    orderResponse= self._postRequest("api.order.place", params)['data']['orderid']
+TypeError: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/harshavardhan/Desktop/2_trading_systems/market_data/30mins_BNF_strategy.py", line 123, in <module>
+    executeTrade(angle_smart_obj,entry, sl, side) 
+  File "/Users/harshavardhan/Desktop/2_trading_systems/market_data/30mins_BNF_strategy.py", line 115, in executeTrade
+    orderId = angle_smart_obj.placeOrder(orderparams)
+  File "/Users/harshavardhan/Desktop/2_trading_systems/venv_python3.8/lib/python3.10/site-packages/smartapi/smartConnect.py", line 290, in placeOrder
+    orderResponse= self._postRequest("api.order.place", params)['data']['orderid']
+TypeError: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/harshavardhan/Desktop/2_trading_systems/market_data/30mins_BNF_strategy.py", line 123, in <module>
+    executeTrade(angle_smart_obj,entry, sl, side) 
+  File "/Users/harshavardhan/Desktop/2_trading_systems/market_data/30mins_BNF_strategy.py", line 115, in executeTrade
+    orderId = angle_smart_obj.placeOrder(orderparams)
+  File "/Users/harshavardhan/Desktop/2_trading_systems/venv_python3.8/lib/python3.10/site-packages/smartapi/smartConnect.py", line 290, in placeOrder
+    orderResponse= self._postRequest("api.order.place", params)['data']['orderid']
+TypeError: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/harshavardhan/Desktop/2_trading_systems/market_data/30mins_BNF_strategy.py", line 123, in <module>
+    executeTrade(angle_smart_obj,entry, sl, side) 
+  File "/Users/harshavardhan/Desktop/2_trading_systems/market_data/30mins_BNF_strategy.py", line 115, in executeTrade
+    orderId = angle_smart_obj.placeOrder(orderparams)
+  File "/Users/harshavardhan/Desktop/2_trading_systems/venv_python3.8/lib/python3.10/site-packages/smartapi/smartConnect.py", line 290, in placeOrder
+    orderResponse= self._postRequest("api.order.place", params)['data']['orderid']
+TypeError: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/harshavardhan/Desktop/2_trading_systems/market_data/30mins_BNF_strategy.py", line 121, in <module>
+    last3_candles_dict = preprocessCandlesData(data)
+  File "/Users/harshavardhan/Desktop/2_trading_systems/market_data/30mins_BNF_strategy.py", line 56, in preprocessCandlesData
+    last3_candles_dict[-2] = candles_data[2]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/Users/harshavardhan/Desktop/2_trading_systems/market_data/30mins_BNF_strategy.py", line 123, in <module>
+    executeTrade(angle_smart_obj,entry, sl, side) 
+  File "/Users/harshavardhan/Desktop/2_trading_systems/market_data/30mins_BNF_strategy.py", line 115, in executeTrade
+    orderId = angle_smart_obj.placeOrder(orderparams)
+  File "/Users/harshavardhan/Desktop/2_trading_systems/venv_python3.8/lib/python3.10/site-packages/smartapi/smartConnect.py", line 290, in placeOrder
+    orderResponse= self._postRequest("api.order.place", params)['data']['orderid']
+TypeError: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "/Users/harshavardhan/Desktop/2_trading_systems/market_data/30mins_BNF_strategy.py", line 123, in <module>
+    executeTrade(angle_smart_obj,entry, sl, side) 
+  File "/Users/harshavardhan/Desktop/2_trading_systems/market_data/30mins_BNF_strategy.py", line 115, in executeTrade
+    orderId = angle_smart_obj.placeOrder(orderparams)
+  File "/Users/harshavardhan/Desktop/2_trading_systems/venv_python3.8/lib/python3.10/site-packages/smartapi/smartConnect.py", line 290, in placeOrder
+    orderResponse= self._postRequest("api.order.place", params)['data']['orderid']
+TypeError: 'NoneType' object is not subscriptable
+/Users/harshavardhan/Desktop/2_trading_systems/venv_python3.8/bin/python3: can't open file '/Users/harshavardhan/Desktop/2_trading_systems/market_data/30mins_BNF_strategy.py': [Errno 2] No such file or directory
+/Users/harshavardhan/Desktop/2_trading_systems/venv_python3.8/bin/python3: can't open file '/Users/harshavardhan/Desktop/2_trading_systems/market_data/30mins_BNF_strategy.py': [Errno 2] No such file or directory
+/Users/harshavardhan/Desktop/2_trading_systems/venv_python3.8/bin/python3: can't open file '/Users/harshavardhan/Desktop/2_trading_systems/market_data/30mins_BNF_strategy.py': [Errno 2] No such file or directory
