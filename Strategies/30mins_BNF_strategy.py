@@ -72,7 +72,12 @@ def isStrongCandle(open,high,low,close):
 def strategy(last3_candles_dict):
     #bullish
     #condition-1: 
-    if (last3_candles_dict[-1][3] < last3_candles_dict[-2][3]) and (last3_candles_dict[-1][4] < last3_candles_dict[-2][4]) and (last3_candles_dict[0][1] > last3_candles_dict[-1][4]) and (last3_candles_dict[0][4] > last3_candles_dict[0][1]) and (last3_candles_dict[-1][1] > last3_candles_dict[-1][4]):
+    if ((last3_candles_dict[-1][3] < last3_candles_dict[-2][3]) and 
+    (last3_candles_dict[-1][4] < last3_candles_dict[-2][4]) and 
+    (last3_candles_dict[0][1] > last3_candles_dict[-1][4]) and 
+    (last3_candles_dict[0][4] > last3_candles_dict[0][1]) and 
+    (last3_candles_dict[-1][1] > last3_candles_dict[-1][4]) and 
+    ( abs(last3_candles_dict[-1][1]-last3_candles_dict[-1][4])<150 )):
         isStrongCandle_bool = isStrongCandle(last3_candles_dict[-1][1],last3_candles_dict[-1][2],last3_candles_dict[-1][3],last3_candles_dict[-1][4])
         if isStrongCandle_bool:
             entry = last3_candles_dict[0][4]
@@ -80,7 +85,12 @@ def strategy(last3_candles_dict):
             side = 1
             return entry, sl, side
     #bearish
-    if (last3_candles_dict[-1][2] > last3_candles_dict[-2][2]) and (last3_candles_dict[-1][4] > last3_candles_dict[-2][4]) and (last3_candles_dict[0][1] < last3_candles_dict[-1][4]) and (last3_candles_dict[0][4] < last3_candles_dict[0][1]) and (last3_candles_dict[-1][1] < last3_candles_dict[-1][4]):
+    if ((last3_candles_dict[-1][2] > last3_candles_dict[-2][2]) and 
+    (last3_candles_dict[-1][4] > last3_candles_dict[-2][4]) and 
+    (last3_candles_dict[0][1] < last3_candles_dict[-1][4]) and 
+    (last3_candles_dict[0][4] < last3_candles_dict[0][1]) and 
+    (last3_candles_dict[-1][1] < last3_candles_dict[-1][4]) and 
+    (abs(last3_candles_dict[-1][1]-last3_candles_dict[-1][4])<150 )):
         isStrongCandle_bool = isStrongCandle(last3_candles_dict[-1][1],last3_candles_dict[-1][2],last3_candles_dict[-1][3],last3_candles_dict[-1][4])
         if isStrongCandle_bool:
             entry = last3_candles_dict[0][4]
@@ -98,8 +108,12 @@ def executeTrade(angle_smart_obj, entry, sl, side):
         transactiontype = "SELL"
         squareoff = (sl-entry)*2 
         squareoff = int(squareoff)
+    sl_pips = abs(entry-sl)
+    squareoff_pips = abs(entry-squareoff)
     entry = int(entry)
-    sl = int(sl)
+    sl_pips = int(sl_pips)
+    squareoff_pips = int(squareoff_pips)
+
     
     orderparams = {
         "variety": "ROBO",
@@ -108,12 +122,12 @@ def executeTrade(angle_smart_obj, entry, sl, side):
         "transactiontype": transactiontype,
         # "transactiontype": "SELL",
         "exchange": "NFO",
-        "ordertype": "MARKET",
+        "ordertype": "LIMIT",
         "producttype": "INTRADAY",
         "duration": "DAY",
-        "price":"43300",
-        "squareoff":squareoff,
-        "stoploss":sl,
+        "price":entry,
+        "squareoff":squareoff_pips,
+        "stoploss":sl_pips,
         "quantity":"25"
     }
     # print(orderparams)
@@ -126,11 +140,13 @@ def executeTrade(angle_smart_obj, entry, sl, side):
 
 if __name__=="__main__":
     angle_smart_obj = angleSmartApiConnection()
-    data = get30MinCandleData(angle_smart_obj)
-    last3_candles_dict = preprocessCandlesData(data)
-    entry, sl, side = strategy(last3_candles_dict)
+    # data = get30MinCandleData(angle_smart_obj)
+    # last3_candles_dict = preprocessCandlesData(data)
+    # entry, sl, side = strategy(last3_candles_dict)
+    entry, sl, side = 1,2,2
     if side != 0:
         executeTrade(angle_smart_obj,entry, sl, side) 
+        # executeTrade(angle_smart_obj,43455,43440,1)
     else:
         print("Conditions did not meet. So order not placed.")
     print("Script executed at:",datetime.datetime.now())
