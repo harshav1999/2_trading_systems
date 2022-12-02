@@ -140,10 +140,10 @@ def executeTrade(angle_smart_obj, entry, sl, side):
 
 if __name__=="__main__":
     angle_smart_obj = angleSmartApiConnection()
-    # data = get30MinCandleData(angle_smart_obj)
-    # last3_candles_dict = preprocessCandlesData(data)
-    # entry, sl, side = strategy(last3_candles_dict)
-    entry, sl, side = 1,2,2
+    data = get30MinCandleData(angle_smart_obj)
+    last3_candles_dict = preprocessCandlesData(data)
+    entry, sl, side = strategy(last3_candles_dict)
+
     if side != 0:
         executeTrade(angle_smart_obj,entry, sl, side) 
         # executeTrade(angle_smart_obj,43455,43440,1)
